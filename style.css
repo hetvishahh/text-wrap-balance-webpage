@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#textContainer {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+#textContainer p {
+    width: 45%;
+    border: 1px solid #ddd;
+    padding: 10px;
+    height: 200px; /* Set a fixed height to better observe the effect */
+    overflow-y: auto; /* Allows scrolling if text is longer */
+}
+
+#normalText {
+    /* Regular text style */
+    background-color: #fff;
+}
+
+#balancedText {
+    /* Simulated balanced text style */
+    background-color: #eef;
+    /* Add styles to simulate a more 'balanced' appearance */
+    text-align: justify;
+    hyphens: auto; /* This can help in simulating more even line breaks */
+    display: none; /* Initially hidden */
+}
+
+.bookshelf {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.bookshelf img {
+    width: 100%;
+    max-width: 400px; /* Adjust as needed */
+}
+
+.bookshelf p {
+    margin-top: 10px;
+}
+
+
+.hidden {
+    display: none;
+}
+
+button {
+    display: block;
+    background-color: #008CBA;
+    color: white;
+    padding: 10px 15px;
+    margin: 10px auto;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #005f73;
+}
+
+#html-editor, #css-editor, #js-editor {
+    width: 100%;
+    height: 200px;
+    font-size: 20px;
+}
+
+#output-window {
+    width: 100%;
+    height: 300px;
+    border: 1px solid #ddd;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Understanding text-wrap: balance</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Using <code>text-wrap: balance</code> - Text Layout in CSS</h1>
+    </header>
+    <section id="introduction">
+        <h2>Introduction</h2>
+        <p>Typically, text on web pages wraps according to the container's width, often resulting in uneven and visually unappealing blocks of text. This can lead to poor readability and a subpar user experience.</p>
+        <p>So now, let's discover the power of <code>text-wrap: balance</code>, a new CSS feature that revolutionizes the way text is displayed on web pages.</p>
+    </section>
+    <section id="information">
+        <h2>What does <code>text-wrap: balance</code> do?</h2>
+        <p>Using this feature, the text is wrapped so that the number of characters on each line is balanced, thus enhancing readability.</p>
+        <p>Let's check out an example!</p>
+    </section>
+    <section id="interactiveExample">
+        <h2>Balance the Bookshelf</h2>
+        <div class="bookshelf" id="unbalancedShelf">
+            <img src="images/unbalanced.png" alt="Unbalanced Bookshelf">
+            <p>The bookshelf does get the job done, but is it really balanced in the best way?</p>
+        </div>
+        <div class="bookshelf hidden" id="balancedShelf">
+            <img src="images/balanced.png" alt="Balanced Bookshelf">
+            <p>There we go! Look at how clean our bookshelf looks now! Notice how the text underneath it changed to look balanced.</p>
+        </div>
+        <button id="toggleShelf">Press here to balance and unbalance the bookshelf!</button>
+    </section>    
+    <section id="runningcodeexample">
+        <h2>How to use <code>text-wrap: balance</code> - try it out yourself!</h2>
+        <p> To implement <code>text-wrap: balance</code>, you simply need to apply it to the desired elements in your css script. In the example below, we are adding it to a header element.</p>
+        <textarea id="html-editor">
+            <h1 class="nowrap">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </h1>
+            <h1 class="wrap">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </h1>
+            </textarea>    
+            <p> You can edit these boxes: Get creative and put your own HTML or CSS code to see how <code>text-wrap: balance</code> works! </p>      
+            <textarea id="css-editor">
+                .nowrap {
+                    text-wrap: nowrap;
+                }
+                .balance {
+                    text-wrap: balance;
+                }
+                </textarea>     
+        <button id="run">Run Code</button>
+        <p>The first output is running through the box.</p>
+        <p>But the second output is the output with <code>text-wrap: balance</code>!</p>
+        <iframe id="output-window"></iframe>
+    </section>
+    <section id="info">
+        <h2>Additional Information</h2>
+        <p>The <code>text-wrap: balance</code> is currently only compatible with select browsers. <a href="https://caniuse.com/css-text-wrap-balance"> Check your browser's compatibility to this feature.</a></p>
+        <p>This feature is best used for headings or pull quotes.</p>
+        <p><a href="https://drafts.csswg.org/css-text-4/#text-wrap"> Specifications</a> </p>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
